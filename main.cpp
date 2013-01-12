@@ -33,7 +33,7 @@ int main(){
 	refresh();
 	vector<unsigned> delay(9,0);
 	unsigned rest = 200000;
-	const char* continuar;
+	const char* continuar = NULL;
 	for(unsigned i=0 ; i<delay.size() ; i++){
 		delay[i] = rest;
 		rest -= 20000;
