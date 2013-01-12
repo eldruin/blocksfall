@@ -1,4 +1,5 @@
 CXX = g++
+CXXFLAGS = -Wall -ansi -pedantic
 LDFLAGS = -lncurses
 EXE = blocksfall
 OBJS = main.o pieza.o matriztetris.o contador.o controlTetris.o
