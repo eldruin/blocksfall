@@ -17,8 +17,8 @@ void MatrizTetris::inicializaM1(){
 }
 
 void MatrizTetris::inicializaM2(){
-	for(int i=0 ; i<m2.dimensionY() ; i++)
-		for(int j=0 ; j<m2.dimensionX() ; j++)
+	for(unsigned i=0 ; i<m2.dimensionY() ; i++)
+		for(unsigned j=0 ; j<m2.dimensionX() ; j++)
 			m2[i][j] = ' ';
 	m2.rellenaColumna(m2.dimensionX()-1,c);
 	m2.rellenaFila(0,c);

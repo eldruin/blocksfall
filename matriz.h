@@ -44,7 +44,7 @@ template <typename T>
 Matriz<T>::Matriz(const Matriz<T>& mat){
 	if(&mat != this){
 		m.clear();
-		for(int i=0 ; i<mat.m.size() ; i++)
+		for(unsigned i=0 ; i<mat.m.size() ; i++)
 			m.push_back(mat.m[i]);
 	}
 }

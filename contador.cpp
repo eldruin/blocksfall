@@ -1,7 +1,8 @@
 #include "contador.h"
 
 void Contador::incrementar(int n){
-	int cont=puntos.size()-1, mult=1;
+	unsigned cont=puntos.size()-1;
+	int mult=1;
 	bool terminado = false;
 	while(!terminado){
 		if(!(n/mult > 0)){
