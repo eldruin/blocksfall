@@ -82,7 +82,6 @@ Pieza* ControlTetris::piezaAleatoria(){
 }
 
 void ControlTetris::pause(){
-	char c;
 	while(true)
 		if(ControlTetris::kbhit())				//KBHIT
 			if(getch() == 'p')
