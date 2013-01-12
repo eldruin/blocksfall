@@ -16,7 +16,7 @@ class Pieza{
 	public:
 		Pieza(unsigned d) : dim(d) {}
 		virtual void rotar(){}
-		virtual const vEstado& vectorEstado() const{}
+		virtual const vEstado& vectorEstado() const = 0;
 		unsigned dimension() const{ return dim; }
 		
 		class EstadoImposible{
