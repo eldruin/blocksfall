@@ -1,20 +1,15 @@
-EXE = main
-CPPSOURCE = main.cpp pieza.cpp matriztetris.cpp contador.cpp controlTetris.cpp
-HPPSOURCE = matriz.h pieza.h matriztetris.h contador.h controlTetris.h
-OBJETO = main.o pieza.o matriztetris.o contador.o controlTetris.o
-FLAGS = -lncurses
-COMP = g++
+CXX = g++
+LDFLAGS = -lncurses
+EXE = blocksfall
+OBJS = main.o pieza.o matriztetris.o contador.o controlTetris.o
 
 all: $(EXE)
 
-$(EXE): $(OBJETO)
-	$(COMP) $(OBJETO) $(FLAGS) -o $(EXE)
+$(EXE): $(OBJS)
+	$(CXX) $(OBJS) $(LDFLAGS) -o $(EXE)
 
-$(OBJETO): $(CPPSOURCE) $(HPPSOURCE)
-	$(COMP) -c $(CPPSOURCE)
-	
 clean:
-	rm *.o *~ $(EXE)
+	$(RM) *.o *~ $(EXE)
 
 run:
 	./$(EXE)
