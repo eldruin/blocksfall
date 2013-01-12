@@ -33,7 +33,7 @@ vEstado PiezaC::v1;
 vEstado PiezaP::v1;
 vEstado PiezaP::v2;
 
-PiezaL::PiezaL() : estado(0), Pieza(3)
+PiezaL::PiezaL() : Pieza(3), estado(0)
 {
 	if(v1.empty()){
 		v1.push_back(make_pair(0,1));
@@ -61,7 +61,7 @@ PiezaL::PiezaL() : estado(0), Pieza(3)
 	}
 }
 
-PiezaL2::PiezaL2() : estado(0), Pieza(3)
+PiezaL2::PiezaL2() : Pieza(3), estado(0)
 {
 	if(v1.empty()){
 		v1.push_back(make_pair(0,1));
@@ -89,7 +89,7 @@ PiezaL2::PiezaL2() : estado(0), Pieza(3)
 	}
 }
 
-PiezaS::PiezaS() : estado(0), Pieza(3)
+PiezaS::PiezaS() : Pieza(3), estado(0)
 {
 	if(v1.empty()){
 		v1.push_back(make_pair(0,2));
@@ -105,7 +105,7 @@ PiezaS::PiezaS() : estado(0), Pieza(3)
 	}
 }
 
-PiezaS2::PiezaS2() : estado(0), Pieza(3)
+PiezaS2::PiezaS2() : Pieza(3), estado(0)
 {
 	if(v1.empty()){
 		v1.push_back(make_pair(0,0));
@@ -121,7 +121,7 @@ PiezaS2::PiezaS2() : estado(0), Pieza(3)
 	}
 }
 
-PiezaT::PiezaT() : estado(0), Pieza(3)
+PiezaT::PiezaT() : Pieza(3), estado(0)
 {
 	if(v1.empty()){
 		v1.push_back(make_pair(0,1));
@@ -159,7 +159,7 @@ PiezaC::PiezaC() : Pieza(2)
 	}
 }
 
-PiezaP::PiezaP() : estado(0), Pieza(4)
+PiezaP::PiezaP() : Pieza(4), estado(0)
 {
 	if(v1.empty()){
 		v1.push_back(make_pair(0,1));

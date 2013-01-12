@@ -1,9 +1,9 @@
 #include "matriztetris.h"
 
 MatrizTetris::MatrizTetris(unsigned alto, unsigned ancho, char ch) : 
-	c(ch),
 	m1( Matriz<char>(alto,ancho,' ') ),
-	m2( Matriz<char>(YM2,XM2) )
+	m2( Matriz<char>(YM2,XM2) ),
+	c(ch)
 {
 	inicializaM1();
 	inicializaM2();

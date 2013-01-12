@@ -8,8 +8,8 @@ ControlTetris::ControlTetris(MatrizTetris& mat) :
 	puntos(5),
 	lineas(3),
 	nivel(1),
-	posY(1),
 	posX(3),
+	posY(1),
 	p(NULL),
 	pSig(NULL)
 {
