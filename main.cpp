@@ -1,4 +1,5 @@
 #include <iostream>
+#include <unistd.h>
 #include <curses.h>
 #include "matriztetris.h"
 #include "contador.h"

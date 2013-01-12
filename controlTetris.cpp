@@ -1,5 +1,7 @@
 #include "controlTetris.h"
 
+#include <unistd.h>
+
 //Constructor
 ControlTetris::ControlTetris(MatrizTetris& mat) :
 	mt(&mat),
